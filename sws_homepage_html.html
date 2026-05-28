@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statewide Well Surveys LLC | Geophysical Well Logging Services</title>
+  <meta name="description" content="Statewide Well Surveys LLC provides professional geophysical well logging services throughout California, Arizona, Nevada, and surrounding Western states." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111827;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 720px;
+      color: #ffffff;
+      background:
+        linear-gradient(rgba(10, 10, 10, 0.72), rgba(10, 10, 10, 0.82)),
+        url("https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 32px;
+      padding: 10px 24px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      background: rgba(0,0,0,0.35);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+
+    .hero h1 {
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      font-weight: 800;
+    }
+
+    .hero-subtitle {
+      margin-top: 28px;
+      font-size: clamp(20px, 3vw, 28px);
+      color: #e5e7eb;
+    }
+
+    .hero-travel {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .hero-tagline {
+      margin-top: 18px;
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .button-row {
+      margin-top: 42px;
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 30px;
+      border-radius: 16px;
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.12);
+      color: #ffffff;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 96px 0;
+    }
+
+    .section-label {
+      margin-bottom: 14px;
+      color: #6b7280;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.12;
+      margin-bottom: 28px;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #4b5563;
+      margin-bottom: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .stats-box {
+      background: #f3f4f6;
+      padding: 32px;
+      border-radius: 32px;
+      box-shadow: 0 24px 50px rgba(0,0,0,0.12);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .stat-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .stat-number {
+      font-size: 38px;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .stat-text {
+      margin-top: 4px;
+      color: #6b7280;
+      font-size: 16px;
+    }
+
+    .gray-section {
+      background: #f3f4f6;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .cards-3 {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .cards-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    }
+
+    .card.border {
+      border: 1px solid #e5e7eb;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 24px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      color: #4b5563;
+      font-size: 18px;
+    }
+
+    .coverage-list {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .coverage-list span {
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+      font-weight: 700;
+    }
+
+    /* CTA */
+    .cta {
+      background: #111827;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #d1d5db;
+      max-width: 780px;
+      margin: 24px auto;
+      font-size: 20px;
+    }
+
+    .contact-info {
+      margin-top: 36px;
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .contact-info div:last-child {
+      margin-top: 8px;
+      font-size: 19px;
+      color: #d1d5db;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #050505;
+      color: #d1d5db;
+      text-align: center;
+      padding: 34px 20px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2,
+      .cards-3,
+      .cards-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 640px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      section {
+        padding: 70px 0;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-badge {
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Statewide Well Surveys LLC</div>
+
+      <h1>Professional Geophysical<br />Well Logging Services</h1>
+
+      <div class="hero-subtitle">Serving California, Arizona &amp; Nevada</div>
+      <div class="hero-travel">Travel to surrounding Western states available as project needs require.</div>
+      <div class="hero-tagline">Reliable Data • Calibrated Equipment • Experienced Field Support</div>
+
+      <div class="button-row">
+        <a href="#contact" class="btn btn-primary">Request a Quote</a>
+        <a href="#services" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container grid-2">
+        <div>
+          <div class="section-label">About SWS</div>
+          <h2>Trusted Well Logging Experience Built Over Decades</h2>
+
+          <p>Statewide Well Surveys LLC provides professional geophysical well logging services for water wells, monitoring wells, engineering firms, hydrogeologists, municipalities, and drilling contractors throughout the Western United States.</p>
+
+          <p>With over 30 years of industry experience, SWS delivers dependable field operations, modern calibrated equipment, and professional reporting designed to support quality groundwater and engineering projects.</p>
+        </div>
+
+        <div class="stats-box">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">30+</div>
+              <div class="stat-text">Years Experience</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-text">States Covered</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">24/7</div>
+              <div class="stat-text">Field Support</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">SDS</div>
+              <div class="stat-text">Warrior Platform</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="gray-section">
+      <div class="container">
+        <div class="center">
+          <div class="section-label">Professional Services</div>
+          <h2>Comprehensive Well Logging Solutions</h2>
+        </div>
+
+        <div class="cards-3">
+          <div class="card">
+            <h3>Open Hole Logging</h3>
+            <ul>
+              <li>• Electric Log (Elog)</li>
+              <li>• Gamma Ray</li>
+              <li>• Guard / LL3</li>
+              <li>• Caliper</li>
+              <li>• Sonic</li>
+              <li>• Deviation / Verticality</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Cased Hole Services</h3>
+            <ul>
+              <li>• Spinner Surveys</li>
+              <li>• Temperature Surveys</li>
+              <li>• Fluid Resistivity</li>
+              <li>• Video Logging</li>
+              <li>• Cement Bond Log (CBL)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Additional Services</h3>
+            <ul>
+              <li>• Water Sampling</li>
+              <li>• Biological / Scale Sampling</li>
+              <li>• LAS Deliverables</li>
+              <li>• Data Presentation</li>
+              <li>• Professional Reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-sws">
+      <div class="container">
+        <div class="cards-4">
+          <div class="card border">
+            <h3>Experience That Matters</h3>
+            <p>Decades of field and operational well logging experience across municipal, agricultural, environmental, engineering, and groundwater projects.</p>
+          </div>
+
+          <div class="card border">
+            <h3>Reliable Equipment</h3>
+            <p>Modern calibrated systems designed for dependable field performance, professional data acquisition, and clear reporting.</p>
+          </div>
+
+          <div class="card border">
+            <h3>Responsive Service</h3>
+            <p>Efficient scheduling, clear communication, and professional field operations from project planning through final deliverables.</p>
+          </div>
+
+          <div class="card border">
+            <h3>Regional Coverage</h3>
+            <p>Serving California, Arizona, and Nevada with flexible mobilization. Additional regional travel available upon request, including Utah, Oregon, Washington, and New Mexico.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coverage" class="gray-section center">
+      <div class="container">
+        <div class="section-label">Service Area</div>
+        <h2>Western U.S. Project Coverage</h2>
+        <p>Statewide Well Surveys LLC serves projects throughout California, Arizona, and Nevada, with travel to surrounding Western states available as project needs require.</p>
+
+        <div class="coverage-list">
+          <span>California</span>
+          <span>Arizona</span>
+          <span>Nevada</span>
+          <span>Utah</span>
+          <span>Oregon</span>
+          <span>Washington</span>
+          <span>New Mexico</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="future" class="center">
+      <div class="container">
+        <div class="section-label">Future Expansion</div>
+        <h2>Expanding Capabilities</h2>
+        <p>Statewide Well Surveys LLC continues investing in advanced geophysical technologies to support evolving project requirements throughout the Western United States.</p>
+
+        <div class="cards-4" style="margin-top: 52px;">
+          <div class="card">
+            <h3>Gyroscopic Deviation Surveys</h3>
+          </div>
+
+          <div class="card">
+            <h3>Electromagnetic Thickness Measurement (EMT24)</h3>
+          </div>
+
+          <div class="card">
+            <h3>Nuclear Magnetic Resonance (NMR)</h3>
+          </div>
+
+          <div class="card">
+            <h3>Dual Induction Logging</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <div class="container">
+        <h2>Request a Quote</h2>
+        <p>Contact Statewide Well Surveys LLC for professional geophysical well logging services throughout California, Arizona, Nevada, and surrounding Western states.</p>
+
+        <div class="contact-info">
+          <div>(909) 801-0262</div>
+          <div>statewidewellsurveys@gmail.com</div>
+        </div>
+
+        <div class="button-row">
+          <a href="mailto:statewidewellsurveys@gmail.com" class="btn btn-primary">Email SWS</a>
+          <a href="tel:9098010262" class="btn btn-secondary">Call Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Statewide Well Surveys LLC</div>
+    <div>Professional Geophysical Well Logging Services | Serving the Western United States</div>
+  </footer>
+</body>
+</html>
