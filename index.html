@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geophysical Well Logging Services | Statewide Well Surveys LLC – Yucaipa, CA</title>
   <meta name="description" content="Professional geophysical well logging in California, Arizona &amp; Nevada. Water well surveys, open hole &amp; cased hole logging. 30+ years experience. Call (909) 801-0262." />
-  <meta name="keywords" content="geophysical well logging, well logging California, well logging Arizona, well logging Nevada, open hole logging, cased hole services, spinner surveys, gamma ray, Robertson Geologging, SDS Warrior, mining well logging, water well logging, Yucaipa California" />
+  <meta name="keywords" content="geophysical well logging, well logging California, well logging Arizona, well logging Nevada, open hole logging, cased hole services, Spinner (Flowmeter) surveys, Gamma-Ray (GR), Robertson Geologging, SDS Warrior, mining well logging, water well logging, Yucaipa California" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://statewidewellsurveys.com/" />
   <!-- Open Graph / iMessage / Social Preview -->
@@ -61,19 +61,19 @@
           "Open Hole Logging",
           "Cased Hole Logging",
           "Water Well Surveys",
-          "Gamma Ray Logging",
+          "Gamma-Ray (GR) Logging",
           "Caliper Logging",
-          "Spinner Surveys",
+          "Spinner (Flowmeter) Surveys",
           "Cement Bond Logging",
-          "Video Logging",
+          "Video Survey",
           "Water Sampling"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Well Logging Services",
           "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Open Hole Logging", "description": "Electric Log, Gamma Ray, Guard/LL3, Caliper, Sonic, Deviation surveys"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cased Hole Services", "description": "Spinner surveys, Temperature surveys, Fluid Resistivity, Video Logging, Cement Bond Log"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Open Hole Logging", "description": "Electric Log, Gamma-Ray (GR), Laterolog 3 (Guard/LL3), Caliper, Sonic Velocity — Variable Density, Gyro / Deviation Surveys"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cased Hole Services", "description": "Spinner (Flowmeter) Surveys, Fluid Resistivity / Temperature Surveys, Fluid Resistivity / Temperature, Video Survey, Cement Bond Log"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Sampling", "description": "Water sampling and biological/scale sampling services"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Field Documentation", "description": "LAS deliverables and comprehensive field documentation"}}
           ]
@@ -103,7 +103,7 @@
             "name": "What types of well logging does Statewide Well Surveys offer?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We offer open hole logging (Electric Log, Gamma Ray, Guard/LL3, Caliper, Sonic, Deviation), cased hole services (Spinner Surveys, Temperature Surveys, Fluid Resistivity, Video Logging, Cement Bond Log), water sampling, biological and scale sampling, and LAS deliverables."
+              "text": "We offer open hole logging (Electric Log, Gamma-Ray (GR), Laterolog 3 (Guard/LL3), Caliper, Sonic Velocity — Variable Density, Deviation), cased hole services (Spinner (Flowmeter) Surveys, Fluid Resistivity / Temperature Surveys, Fluid Resistivity / Temperature, Video Survey, Cement Bond Log), water sampling, biological and scale sampling, and LAS deliverables."
             }
           },
           {
@@ -150,13 +150,7 @@
   <meta name="ICBM" content="34.0336, -117.0431" />
   <link rel="preload" href="images/img_07.png" as="image" />
   <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png" />
-  <meta name="theme-color" content="#ffffff" />
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
 
@@ -1311,6 +1305,58 @@
       background: var(--bg-warm);
     }
 
+
+
+    .about-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-label);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 4px;
+      margin: 20px 0 24px;
+      transition: opacity 0.15s;
+    }
+    .about-link:hover { opacity: 0.6; }
+    .about-link-arrow { font-size: 16px; }
+
+    /* ── NAV DROPDOWN ── */
+    .nav-links li { position: relative; }
+    .nav-links li.has-dropdown > a::after {
+      content: ' ▾'; font-size: 9px; margin-left: 4px; opacity: 0.6;
+    }
+    .dropdown {
+      display: none;
+      position: absolute; top: 100%; left: 0;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--ink);
+      min-width: 260px; z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .nav-links li.has-dropdown:hover .dropdown { display: block; }
+    .dropdown li { border-bottom: 1px solid var(--rule); list-style: none; }
+    .dropdown li:last-child { border-bottom: none; }
+    .dropdown li a {
+      display: block; height: auto; padding: 12px 18px;
+      font-size: 13px; letter-spacing: 1px;
+      border: none !important; color: var(--ink-mid); white-space: nowrap;
+    }
+    .dropdown li a:hover { background: var(--bg-warm); color: var(--ink); padding-left: 22px; }
+
+    /* ── MOBILE MENU SECTION HEADER ── */
+    .mob-section {
+      padding: 10px 24px 4px;
+      font-family: var(--font-label); font-size: 10px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase; color: var(--ink-light);
+      background: var(--bg-warm); border-bottom: 1px solid var(--rule);
+    }
+
     /* ── TOUCH & INTERACTION ── */
     * { -webkit-tap-highlight-color: transparent; }
     html { -webkit-text-size-adjust: 100%; }
@@ -1354,7 +1400,7 @@
         <img src="images/img_01.png" alt="Statewide Well Surveys LLC" />
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#technology">Technology</a></li>
         <li><a href="#why-sws">Why SWS</a></li>
@@ -1431,25 +1477,45 @@
 </div>
 
 <!-- ── ABOUT ── -->
-<section class="sec" id="about">
-  <div class="container">
-    <div class="about-split reveal">
-      <div class="about-text">
-        <div class="eyebrow">About SWS</div>
-        <h2>Built on Three Decades of Field Experience</h2>
-        <p>Statewide Well Surveys LLC provides professional geophysical well logging throughout the Western United States. We work with water districts, municipalities, engineering firms, hydrogeologists, drilling contractors, and mining operations.</p>
-        <p>Based in Yucaipa, California, SWS delivers dependable field operations, modern calibrated equipment, and comprehensive field documentation. We operate a combination of modern digital logging platforms and proven industry-standard instrumentation, allowing flexible tool selection while maintaining data quality and operational redundancy.</p>
-      </div>
-      <div class="about-img-col">
-        <img src="images/img_02.png" alt="SWS well logging truck and equipment at a field site in the Western United States" loading="lazy" />
-        <div class="about-img-overlay">
-          <div class="about-img-badge">30+</div>
-          <div class="about-img-badge-sub">Years in the Field</div>
+    <section class="sec" id="about">
+      <div class="container">
+        <div class="about-split reveal">
+          <div class="about-text">
+            <div class="eyebrow">About SWS</div>
+            <h2>Family-Owned.<br/>Field-Focused.</h2>
+            <p>Statewide Well Surveys LLC is a family-owned geophysical well logging company founded by Joseph Abreau after 30 years in the industry. Based in Yucaipa, California, we serve water districts, municipalities, engineering firms, drilling contractors, and mining operations throughout the Western United States.</p>
+            <p>We built Statewide around experience, quality data, dependable service, and fair, straightforward pricing. As a smaller, family-owned company we stay personally involved on every project &mdash; you deal with the owner, not a dispatcher.</p>
+            <a href="about.html" class="about-link">
+              Meet Joseph &amp; Ethan Abreau
+              <span class="about-link-arrow">&#8594;</span>
+            </a>
+            <div class="client-grid">
+              <div class="client-chip">Water Districts</div>
+              <div class="client-chip">Municipalities</div>
+              <div class="client-chip">Engineering Firms</div>
+              <div class="client-chip">Hydrogeologists</div>
+              <div class="client-chip">Drilling Contractors</div>
+              <div class="client-chip">Environmental Consultants</div>
+              <div class="client-chip">Agricultural Clients</div>
+              <div class="client-chip">Mining Operations</div>
+            </div>
+          </div>
+          <div class="about-img-col">
+            <a href="about.html">
+              <img
+                src="images/img_02.png"
+                alt="Statewide Well Surveys logging van in the Western U.S. field at sunset"
+                loading="lazy"
+              />
+            </a>
+            <div class="about-img-overlay">
+              <div class="about-img-badge">30+</div>
+              <div class="about-img-badge-sub">Years in the Field</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 <!-- ── SERVICES ── -->
 <section class="sec sec-dark" id="services">
@@ -1463,22 +1529,22 @@
         <div class="svc-num">01</div>
         <h3 class="light">Open Hole Logging</h3>
         <ul class="svc-list">
-          <li>Electric Log (Elog)</li>
-          <li>Gamma Ray</li>
-          <li>Guard / LL3</li>
+          <li>Electric Log (E-log)</li>
+          <li>Gamma-Ray (GR)</li>
+          <li>Laterolog 3 (Guard/LL3)</li>
           <li>Caliper</li>
-          <li>Sonic</li>
-          <li>Deviation / Verticality</li>
+          <li>Sonic Velocity — Variable Density</li>
+          <li>Gyro / Deviation Survey</li>
         </ul>
       </div>
       <div class="svc-card">
         <div class="svc-num">02</div>
         <h3 class="light">Cased Hole Services</h3>
         <ul class="svc-list">
-          <li>Spinner Surveys</li>
-          <li>Temperature Surveys</li>
-          <li>Fluid Resistivity</li>
-          <li>Video Logging</li>
+          <li>Spinner (Flowmeter) Surveys</li>
+          <li>Fluid Resistivity / Temperature Surveys</li>
+          <li>Discrete-Depth Water Sampling</li>
+          <li>Video Survey</li>
           <li>Cement Bond Log (CBL)</li>
         </ul>
       </div>
@@ -1503,11 +1569,11 @@
       <div class="future-grid reveal">
         <div class="future-card" style="background:rgba(255,255,255,0.04)">
           <div class="future-chip" style="color:rgba(255,255,255,0.35)">Coming Soon</div>
-          <h3 class="light" style="font-size:14px">Gyroscopic Deviation Surveys</h3>
+          <h3 class="light" style="font-size:14px">Gyroscopic Gyro / Deviation Surveys</h3>
         </div>
         <div class="future-card" style="background:rgba(255,255,255,0.04); border-color:rgba(255,255,255,0.1)">
           <div class="future-chip" style="color:rgba(255,255,255,0.35)">Coming Soon</div>
-          <h3 class="light" style="font-size:14px">Electromagnetic Thickness (EMT24)</h3>
+          <h3 class="light" style="font-size:14px">Electromagnetic Thickness (EMT-24 Casing Inspection)</h3>
         </div>
         <div class="future-card" style="background:rgba(255,255,255,0.04); border-color:rgba(255,255,255,0.1)">
           <div class="future-chip" style="color:rgba(255,255,255,0.35)">Coming Soon</div>
@@ -1515,7 +1581,7 @@
         </div>
         <div class="future-card" style="background:rgba(255,255,255,0.04); border-color:rgba(255,255,255,0.1); border-right:none">
           <div class="future-chip" style="color:rgba(255,255,255,0.35)">Coming Soon</div>
-          <h3 class="light" style="font-size:14px">Dual Induction Logging</h3>
+          <h3 class="light" style="font-size:14px">Dual Induction</h3>
         </div>
       </div>
     </div>
@@ -1877,7 +1943,7 @@
       <img src="images/img_01.png" alt="Statewide Well Surveys LLC" />
     </div>
     <nav class="footer-nav">
-      <a href="#about">About</a>
+      <a href="about.html">About SWS</a>
       <a href="#services">Services</a>
       <a href="#technology">Technology</a>
       <a href="#safety">Safety</a>
