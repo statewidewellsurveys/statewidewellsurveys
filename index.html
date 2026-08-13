@@ -615,6 +615,8 @@
     }
 
     .svc-card:last-child { border-right: none; }
+    a.svc-card { display: block; text-decoration: none; color: inherit; transition: background .18s; }
+    a.svc-card:hover { background: rgba(255,255,255,0.05); }
 
     .svc-num {
       font-family: var(--font-display);
@@ -1401,7 +1403,18 @@
       </a>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li class="has-dropdown"><a href="#services">Services</a>
+          <ul class="dropdown">
+            <li><a href="geophysical-well-logging.html">Geophysical Well Logging</a></li>
+            <li><a href="open-hole-logging.html">Open Hole Logging</a></li>
+            <li><a href="cased-hole-services.html">Cased Hole Services</a></li>
+            <li><a href="water-well-video-logging.html">Video Survey</a></li>
+            <li><a href="water-sampling.html">Water Sampling</a></li>
+            <li><a href="mining-well-logging.html">Mining Well Logging</a></li>
+            <li><a href="sds-warrior.html">SDS Warrior Platform</a></li>
+            <li><a href="robertson-geologging.html">Robertson Geologging</a></li>
+          </ul>
+        </li>
         <li><a href="#technology">Technology</a></li>
         <li><a href="#why-sws">Why SWS</a></li>
         <li><a href="#safety">Safety</a>
@@ -1421,6 +1434,15 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about">About</a>
   <a href="#services">Services</a>
+  <div class="mob-section">Our Services</div>
+  <a href="geophysical-well-logging.html">Geophysical Well Logging</a>
+  <a href="open-hole-logging.html">Open Hole Logging</a>
+  <a href="cased-hole-services.html">Cased Hole Services</a>
+  <a href="water-well-video-logging.html">Video Survey</a>
+  <a href="water-sampling.html">Water Sampling</a>
+  <a href="mining-well-logging.html">Mining Well Logging</a>
+  <a href="sds-warrior.html">SDS Warrior Platform</a>
+  <a href="robertson-geologging.html">Robertson Geologging</a>
   <a href="#technology">Technology</a>
   <a href="#why-sws">Why SWS</a>
   <a href="#safety">Safety &amp; Quality</a>
@@ -1522,10 +1544,10 @@
   <div class="container">
     <div class="eyebrow eyebrow-light">Professional Services</div>
     <h2 class="light">Comprehensive Well Logging Solutions</h2>
-    <p class="light" style="max-width:600px">From open hole surveys to cased hole diagnostics. Click any service category to expand the full list.</p>
+    <p class="light" style="max-width:600px">From open hole surveys to cased hole diagnostics. Select any service to see the full details.</p>
 
     <div class="services-grid reveal">
-      <div class="svc-card">
+      <a class="svc-card" href="open-hole-logging.html">
         <div class="svc-num">01</div>
         <h3 class="light">Open Hole Logging</h3>
         <ul class="svc-list">
@@ -1536,8 +1558,8 @@
           <li>Sonic Velocity — Variable Density</li>
           <li>Gyro / Deviation Survey</li>
         </ul>
-      </div>
-      <div class="svc-card">
+      </a>
+      <a class="svc-card" href="cased-hole-services.html">
         <div class="svc-num">02</div>
         <h3 class="light">Cased Hole Services</h3>
         <ul class="svc-list">
@@ -1547,8 +1569,8 @@
           <li>Video Survey</li>
           <li>Cement Bond Log (CBL)</li>
         </ul>
-      </div>
-      <div class="svc-card">
+      </a>
+      <a class="svc-card" href="water-sampling.html">
         <div class="svc-num">03</div>
         <h3 class="light">Field &amp; Data Services</h3>
         <ul class="svc-list">
@@ -1558,7 +1580,7 @@
           <li>Field Documentation</li>
           <li>Client Q &amp; A Support</li>
         </ul>
-      </div>
+      </a>
     </div>
 
     <!-- Expanding Capabilities accordion inside services -->
