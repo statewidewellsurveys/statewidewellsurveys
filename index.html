@@ -1359,6 +1359,26 @@
       background: var(--bg-warm); border-bottom: 1px solid var(--rule);
     }
 
+    /* Mobile submenu items (services nested under "Services") */
+    .mobile-menu a.mob-sub {
+      padding-left: 48px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      color: var(--ink-light);
+      background: var(--bg-warm);
+    }
+    .mobile-menu a.mob-sub::before {
+      content: '';
+      display: inline-block;
+      width: 16px; height: 1px;
+      background: var(--ink-light);
+      vertical-align: middle;
+      margin-right: 12px; margin-left: -24px;
+      opacity: 0.5;
+    }
+    .mobile-menu a.mob-sub:hover { color: var(--ink); background: var(--bg-warm); }
+
     /* ── TOUCH & INTERACTION ── */
     * { -webkit-tap-highlight-color: transparent; }
     html { -webkit-text-size-adjust: 100%; }
@@ -1417,9 +1437,7 @@
         </li>
         <li><a href="#technology">Technology</a></li>
         <li><a href="#why-sws">Why SWS</a></li>
-        <li><a href="#safety">Safety</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#faq">FAQ</a></li>
+        <li><a href="#safety">Safety</a></li>
         <li><a href="#coverage">Coverage</a></li>
         <li class="cta"><a href="#contact">Request Quote</a></li>
       </ul>
@@ -1434,19 +1452,20 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <div class="mob-section">Our Services</div>
-  <a href="geophysical-well-logging.html">Geophysical Well Logging</a>
-  <a href="open-hole-logging.html">Open Hole Logging</a>
-  <a href="cased-hole-services.html">Cased Hole Services</a>
-  <a href="water-well-video-logging.html">Video Survey</a>
-  <a href="water-sampling.html">Water Sampling</a>
-  <a href="mining-well-logging.html">Mining Well Logging</a>
-  <a href="sds-warrior.html">SDS Warrior Platform</a>
-  <a href="robertson-geologging.html">Robertson Geologging</a>
+  <a href="geophysical-well-logging.html" class="mob-sub">Geophysical Well Logging</a>
+  <a href="open-hole-logging.html" class="mob-sub">Open Hole Logging</a>
+  <a href="cased-hole-services.html" class="mob-sub">Cased Hole Services</a>
+  <a href="water-well-video-logging.html" class="mob-sub">Video Survey</a>
+  <a href="water-sampling.html" class="mob-sub">Water Sampling</a>
+  <a href="mining-well-logging.html" class="mob-sub">Mining Well Logging</a>
+  <a href="sds-warrior.html" class="mob-sub">SDS Warrior Platform</a>
+  <a href="robertson-geologging.html" class="mob-sub">Robertson Geologging</a>
   <a href="#technology">Technology</a>
   <a href="#why-sws">Why SWS</a>
   <a href="#safety">Safety &amp; Quality</a>
   <a href="#coverage">Coverage</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#faq">FAQ</a>
   <a href="#contact">Request a Quote</a>
 </div>
 
